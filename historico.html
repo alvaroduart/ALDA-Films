@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico | ALDA Films</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/historico.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="./img/logobranca.png" alt="Logo ALDA Films">
+    </a>
+    
+    <button aria-label="Abrir menu">☰</button>
+    
+    <nav>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="historico.html">Histórico</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    
+    <form>
+        <a href="login.html">
+            <i class="fas fa-user"></i>
+        </a>
+      <i class="fas fa-moon"></i>
+    </form>
+
+  </header>
+
+  <main>
+    <section>
+      <img src="./img/spiderman.png">
+      <article>
+        <h1><em>Spider Man</em></h1>
+        <p>
+          Depois de lutar ao lado dos Vingadores, chegou a hora do jovem Peter Parker voltar para casa em Nova York ao lado de sua tia May. Sob o olhar atento do mentor Tony Stark, Peter começa a abraçar Depois de lutar ao lado dos Vingadores, chegou a hora do jovem Peter Parker voltar para casa em Nova...
+        </p>
+      </article>
+      <aside>
+        <span>3</span>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-heart"></i>
+      </aside>
+    </section>
+
+    <section>
+        <img src="./img/Batman.png">
+        <article>
+          <h1><em>Batman</em></h1>
+          <p>
+            Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.
+          </p>
+        </article>
+        <aside>          
+          <i class="far fa-star"></i>
+          <i class="far fa-heart"></i>
+        </aside>
+      </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="index.html">
+        <img src="./img/logobranca.png" alt="Logo ALDA Films">
+      </a>
+      <p>Sua plataforma de filmes online.<br>Assista filmes em qualquer lugar!</p>
+    </div>
+    <div>
+      <h4>Links Rápidos</h4>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="historico.html">Histórico</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('header button').addEventListener('click', () => {
+      const nav = document.querySelector('header nav');
+      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+    });
+  </script>
+</body>
+</html>
+

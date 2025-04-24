@@ -78,6 +78,7 @@ main form button[type="submit"] {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  width: 100%;  
 }
 
 main form button[type="submit"]:hover {
@@ -92,8 +93,6 @@ header button[aria-label="Abrir menu"] {
   font-size: 1.5rem;
   cursor: pointer;
 }
-
-
 
 nav {
   display: flex;

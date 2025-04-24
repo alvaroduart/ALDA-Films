@@ -57,7 +57,7 @@ main section article i {
   margin-right: 0.5rem;
 }
 
-.fa-star, .far.fa-star {
+.fa-star {
   color: var(--accent);
 }
 
@@ -157,5 +157,17 @@ header nav button[type="button"]:hover {
   header nav button[type="button"] {
       width: 100%;
       margin: 0.5rem 0;
+  }
+}
+
+@media (hover: hover){
+  .fa-heart:hover {
+    color: #ff6b6b;
+    cursor: pointer;
+  }
+  
+  .fa-star:hover {
+    color: var(--accent);
+    cursor: pointer;
   }
 }
