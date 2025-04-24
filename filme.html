@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider-Man: Homecoming | ALPA Films</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/filme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="./img/logobranca.png" alt="Logo ALPA Films">
+    </a>
+    
+    <button aria-label="Abrir menu">☰</button>
+    
+    <nav>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="historico.html">Histórico</a>
+      <a href="contato.html">Contato</a>
+      <a href="login.html">
+        <button type="button">Iniciar Sessão</button>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <img src="./img/spiderman.png" alt="Spider-Man Homecoming">
+      
+      <article>
+        <p>
+          Depois de lutar ao lado dos Vingadores, chegou a hora do jovem Peter Parker voltar para casa em Nova York ao lado de sua tia May. Sob o olhar atento do mentor Tony Stark, Peter começa a abraçar sua nova identidade como Homem-Aranha e combate diariamente pequenos crimes nas redondezas. Ele acredita que encontrou a missão de sua vida quando o terrível vilão Abutre surge ameaçando a cidade. O problema é que a tarefa não será tão fácil como ele imaginava.
+        </p>
+
+        <p>
+          <span>Ação</span>
+          <span>Ficção</span>
+          <span>Drama</span>
+        </p>
+
+        <a href="login.html"><i class="fas fa-play"></i> ASSISTIR</a>
+
+        <p>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="fas fa-heart"></i>
+        </p>
+
+        <form>
+          <label>Comentário:</label>
+          <textarea rows="4" placeholder="Escreva seu comentário aqui..."></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div>
+      <a href="index.html">
+        <img src="./img/logobranca.png" alt="Logo ALPA Films">
+      </a>
+      <p>Sua plataforma de filmes online. Assista filmes em qualquer lugar!</p>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('header button').addEventListener('click', () => {
+      const nav = document.querySelector('header nav');
+      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+    });
+  </script>
+</body>
+</html>

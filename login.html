@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ALDA Films</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contato.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="./img/logo.png" alt="Logo ALDA Films">
+    </a>
+    
+    <button aria-label="Abrir menu">☰</button>
+    
+    <nav>            
+      <a href="contato.html">Contato</a>
+      <a href="cadastro.html">
+        <button type="button">Cadastrar-se</button>
+    </a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Iniciar Sessão</h1>
+    <p>Acesse sua conta para continuar</p>
+    
+    <form>
+      <input type="email" placeholder="E-mail" required>
+      <input type="password" placeholder="Senha" required>
+      
+      <div>
+        <input type="checkbox" id="remember">
+        <label for="remember">Lembrar-me</label>
+      </div>
+      
+      <button type="submit">Entrar</button>
+      
+      <p>
+        <a href="cadastro.html">Cadastrar-se</a> | 
+        <a href="#">Esqueceu a senha?</a>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <div>
+      <a href="index.html">
+        <img src="./img/logobranca.png" alt="Logo ALDA Films"/>            
+      </a>    
+      <p>Sua plataforma de filmes online. Assista filmes em qualquer lugar!</p>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('header button').addEventListener('click', () => {
+      const nav = document.querySelector('header nav');
+      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+    });
+  </script>
+</body>
+</html>

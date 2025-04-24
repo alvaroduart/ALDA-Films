@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALDA Films</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="./img/logobranca.png" alt="Logo ALDA Films">
+    </a>
+
+    <button aria-label="Abrir menu">☰</button>
+    
+    <nav>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="historico.html">Histórico</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    
+    <form>
+      <input type="text" placeholder="Pesquisar">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-filter"></i>
+      <i class="fas fa-moon"></i>
+    </form>
+  </header>
+
+  <main>
+    <section>
+      <a href="filme.html" class="filme-link">
+        <article>
+          <img src="./img/spiderman.png" alt="Spider Man">
+          <h2><em>Spider Man</em></h2>
+          <p>⭐ 4.8</p>
+        </article>
+      </a>
+      
+      <article>
+        <img src="./img/Batman.png" alt="Batman">
+        <h2><em>Batman</em></h2>
+        <p>⭐ 3.7</p>
+      </article>
+      <article>
+        <img src="./img/Justice Ligue.png" alt="Justice League">
+        <h2><em>Justice League</em></h2>
+        <p>⭐ 2.3</p>
+      </article>
+      <article>
+        <img src="./img/forja.png" alt="A Forja">
+        <h2><em>A Forja</em></h2>
+        <p>⭐ 1.2</p>
+      </article>
+      <article>
+        <img src="./img/spiderman.png" alt="Spider Man">
+        <h2><em>Spider Man</em></h2>
+        <p>⭐ 4.8</p>
+      </article>
+      <article>
+        <img src="./img/Batman.png" alt="Batman">
+        <h2><em>Batman</em></h2>
+        <p>⭐ 3.7</p>
+      </article>
+      <article>
+        <img src="./img/Justice Ligue.png" alt="Justice League">
+        <h2><em>Justice League</em></h2>
+        <p>⭐ 2.3</p>
+      </article>
+      <article>
+        <img src="./img/forja.png" alt="A Forja">
+        <h2><em>A Forja</em></h2>
+        <p>⭐ 1.2</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="index.html">
+        <img src="./img/logobranca.png" alt="Logo ALDA Films">
+      </a>
+      <p>Sua plataforma de filmes online.<br>Assista filmes em qualquer lugar!</p>
+    </div>
+    <div>
+      <h4>Links Rápidos</h4>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="historico.html">Histórico</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('header button').addEventListener('click', () => {
+      const nav = document.querySelector('header nav');
+      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+    });
+  </script>
+</body>
+</html>
