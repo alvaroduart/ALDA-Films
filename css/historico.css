@@ -88,13 +88,13 @@ aside > span {
 }
 
 aside > .fa-star {
-    color: #FFC107;
+    color: #DAA520;
     font-size: 2.3em;
     transition: color 0.3s ease;
 }
 
 aside > .fa-heart {
-    color: #F44336;
+    color: red;
     font-size: 2.3em;
     transition: color 0.3s ease;
 }
@@ -182,23 +182,14 @@ aside > .fa-heart {
 
 @media (hover: hover) {
     aside > .fa-heart:hover {
-        color: #ff6b6b;
+        color: red;
         cursor: pointer;
     }
 
     aside > .fa-star:hover {
-        color: #ffd700;
+        color: #DAA520;
         cursor: pointer;
     }
 }
 
-header nav {
-    display: none;
-    flex-direction: column;
-    background: var(--bg);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-}
+
